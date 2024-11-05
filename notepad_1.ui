@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>434</width>
+    <height>303</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Aneesh</string>
+  </property>
+  <property name="toolButtonStyle">
+   <enum>Qt::ToolButtonTextUnderIcon</enum>
+  </property>
+  <property name="documentMode">
+   <bool>false</bool>
+  </property>
+  <property name="tabShape">
+   <enum>QTabWidget::Triangular</enum>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QHBoxLayout" name="horizontalLayout_8">
+    <item>
+     <widget class="QTextEdit" name="textEdit"/>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>434</width>
+     <height>18</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menufile">
+    <property name="title">
+     <string>file</string>
+    </property>
+    <addaction name="new_icon"/>
+    <addaction name="actionopen"/>
+    <addaction name="actionsave"/>
+    <addaction name="actionprint"/>
+    <addaction name="actionExit"/>
+   </widget>
+   <widget class="QMenu" name="menuedit">
+    <property name="title">
+     <string>edit</string>
+    </property>
+    <addaction name="actioncut"/>
+    <addaction name="actioncopy"/>
+    <addaction name="actionpaste"/>
+    <addaction name="actionDelete"/>
+    <addaction name="actionSelect_All"/>
+    <addaction name="actionundo"/>
+    <addaction name="actionredo"/>
+   </widget>
+   <widget class="QMenu" name="menuview">
+    <property name="title">
+     <string>view</string>
+    </property>
+    <addaction name="actionZoom_in_1"/>
+    <addaction name="actionZoom_out"/>
+   </widget>
+   <addaction name="menufile"/>
+   <addaction name="menuedit"/>
+   <addaction name="menuview"/>
+  </widget>
+  <widget class="QToolBar" name="toolBar">
+   <property name="cursor">
+    <cursorShape>ArrowCursor</cursorShape>
+   </property>
+   <property name="mouseTracking">
+    <bool>false</bool>
+   </property>
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <property name="toolButtonStyle">
+    <enum>Qt::ToolButtonIconOnly</enum>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="separator"/>
+   <addaction name="new_icon"/>
+   <addaction name="actionopen"/>
+   <addaction name="separator"/>
+   <addaction name="actionsave"/>
+   <addaction name="separator"/>
+   <addaction name="actioncut"/>
+   <addaction name="separator"/>
+   <addaction name="actioncopy"/>
+   <addaction name="separator"/>
+   <addaction name="actionpaste"/>
+   <addaction name="separator"/>
+   <addaction name="actionZoom_in_1"/>
+   <addaction name="separator"/>
+   <addaction name="actionZoom_out"/>
+   <addaction name="separator"/>
+  </widget>
+  <action name="new_icon">
+   <property name="icon">
+    <iconset>
+     <normaloff>C:/Users/Aneesh.s/OneDrive/Desktop/mixed circuit signal/add-file.png</normaloff>C:/Users/Aneesh.s/OneDrive/Desktop/mixed circuit signal/add-file.png</iconset>
+   </property>
+   <property name="text">
+    <string>new</string>
+   </property>
+  </action>
+  <action name="actionopen">
+   <property name="icon">
+    <iconset>
+     <normaloff>C:/Users/Aneesh.s/OneDrive/Desktop/mixed circuit signal/folder.png</normaloff>C:/Users/Aneesh.s/OneDrive/Desktop/mixed circuit signal/folder.png</iconset>
+   </property>
+   <property name="text">
+    <string>open</string>
+   </property>
+  </action>
+  <action name="actionsave">
+   <property name="icon">
+    <iconset>
+     <normaloff>C:/Users/Aneesh.s/OneDrive/Desktop/mixed circuit signal/diskette.png</normaloff>C:/Users/Aneesh.s/OneDrive/Desktop/mixed circuit signal/diskette.png</iconset>
+   </property>
+   <property name="text">
+    <string>save</string>
+   </property>
+  </action>
+  <action name="actioncut">
+   <property name="icon">
+    <iconset>
+     <normaloff>C:/Users/Aneesh.s/OneDrive/Desktop/mixed circuit signal/cut.png</normaloff>C:/Users/Aneesh.s/OneDrive/Desktop/mixed circuit signal/cut.png</iconset>
+   </property>
+   <property name="text">
+    <string>cut</string>
+   </property>
+  </action>
+  <action name="actioncopy">
+   <property name="icon">
+    <iconset>
+     <normaloff>C:/Users/Aneesh.s/OneDrive/Desktop/mixed circuit signal/copy-two-paper-sheets-interface-symbol.png</normaloff>C:/Users/Aneesh.s/OneDrive/Desktop/mixed circuit signal/copy-two-paper-sheets-interface-symbol.png</iconset>
+   </property>
+   <property name="text">
+    <string>copy</string>
+   </property>
+  </action>
+  <action name="actionOpen_in_Default_Viewer">
+   <property name="text">
+    <string>Open in Default Viewer</string>
+   </property>
+  </action>
+  <action name="actionOpen_Folder_as_Workspace">
+   <property name="text">
+    <string>Open Folder as Workspace</string>
+   </property>
+  </action>
+  <action name="actionReload_From_Disk">
+   <property name="text">
+    <string>Reload From Disk</string>
+   </property>
+  </action>
+  <action name="actionsave_2">
+   <property name="text">
+    <string>save</string>
+   </property>
+  </action>
+  <action name="actionSave_As">
+   <property name="text">
+    <string>Save As..</string>
+   </property>
+  </action>
+  <action name="actionSave_a_Copy_As">
+   <property name="text">
+    <string>Save a Copy As..</string>
+   </property>
+  </action>
+  <action name="actionSave_All">
+   <property name="text">
+    <string>Save All</string>
+   </property>
+  </action>
+  <action name="actionRename">
+   <property name="text">
+    <string>Rename...</string>
+   </property>
+  </action>
+  <action name="actionColse">
+   <property name="text">
+    <string>Colse</string>
+   </property>
+  </action>
+  <action name="actionClose_All">
+   <property name="text">
+    <string>Close All</string>
+   </property>
+  </action>
+  <action name="actionMove_to_Recycle_Bin">
+   <property name="text">
+    <string>Move to Recycle Bin</string>
+   </property>
+  </action>
+  <action name="actionload_Session">
+   <property name="text">
+    <string>load Session</string>
+   </property>
+  </action>
+  <action name="actionSave_Session">
+   <property name="text">
+    <string>Save Session</string>
+   </property>
+  </action>
+  <action name="actionprint">
+   <property name="text">
+    <string>print</string>
+   </property>
+  </action>
+  <action name="actionprint_now">
+   <property name="text">
+    <string>print now</string>
+   </property>
+  </action>
+  <action name="actionExit">
+   <property name="text">
+    <string>Exit</string>
+   </property>
+  </action>
+  <action name="actionpaste">
+   <property name="icon">
+    <iconset>
+     <normaloff>C:/Users/Aneesh.s/OneDrive/Desktop/mixed circuit signal/paste.png</normaloff>C:/Users/Aneesh.s/OneDrive/Desktop/mixed circuit signal/paste.png</iconset>
+   </property>
+   <property name="text">
+    <string>paste</string>
+   </property>
+  </action>
+  <action name="actionDelete">
+   <property name="text">
+    <string>Delete</string>
+   </property>
+  </action>
+  <action name="actionSelect_All">
+   <property name="text">
+    <string>Select All</string>
+   </property>
+  </action>
+  <action name="actionBegin_End_Select">
+   <property name="text">
+    <string>Begin/End Select</string>
+   </property>
+  </action>
+  <action name="actionBegin_End_Select_in_Coloumn_Mode">
+   <property name="text">
+    <string>Begin/End Select in Coloumn Mode</string>
+   </property>
+  </action>
+  <action name="actionInsert">
+   <property name="text">
+    <string>Insert</string>
+   </property>
+  </action>
+  <action name="actionCopy_to_Clipboard">
+   <property name="text">
+    <string>Copy to Clipboard</string>
+   </property>
+  </action>
+  <action name="actionIndent">
+   <property name="text">
+    <string>Indent</string>
+   </property>
+  </action>
+  <action name="actionConvert_Case_to">
+   <property name="text">
+    <string>Convert Case to</string>
+   </property>
+  </action>
+  <action name="actionline_Operation">
+   <property name="text">
+    <string>line Operation</string>
+   </property>
+  </action>
+  <action name="actionZoom_out">
+   <property name="icon">
+    <iconset>
+     <normaloff>C:/Users/Aneesh.s/OneDrive/Desktop/mixed circuit signal/magnifying-glass.png</normaloff>C:/Users/Aneesh.s/OneDrive/Desktop/mixed circuit signal/magnifying-glass.png</iconset>
+   </property>
+   <property name="text">
+    <string>Zoom out</string>
+   </property>
+  </action>
+  <action name="actionundo">
+   <property name="text">
+    <string>undo</string>
+   </property>
+  </action>
+  <action name="actionredo">
+   <property name="text">
+    <string>redo</string>
+   </property>
+  </action>
+  <action name="actionZoom_in_1">
+   <property name="icon">
+    <iconset>
+     <normaloff>C:/Users/Aneesh.s/OneDrive/Desktop/mixed circuit signal/zoom-in.png</normaloff>C:/Users/Aneesh.s/OneDrive/Desktop/mixed circuit signal/zoom-in.png</iconset>
+   </property>
+   <property name="text">
+    <string>Zoom in</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
